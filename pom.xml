@@ -163,8 +163,8 @@
     <commons.release.version>2.8.0</commons.release.version>
     <!-- Commons Release Plugin -->
     <commons.bc.version>2.7.0</commons.bc.version>
-    <commons.releaseManagerName>Gary Gregory</commons.releaseManagerName>    
-    <commons.releaseManagerKey>86fdc7e2a11262cb</commons.releaseManagerKey>  
+    <commons.releaseManagerName>Gary Gregory</commons.releaseManagerName>
+    <commons.releaseManagerKey>86fdc7e2a11262cb</commons.releaseManagerKey>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.release.name>commons-vfs-${commons.release.version}</commons.release.name>
     <commons.release.desc>(requires Java 8)</commons.release.desc>
@@ -176,7 +176,7 @@
 -->
 
     <vfs.parent.dir>${basedir}</vfs.parent.dir>
-    <version.checkstyle>3.1.1</version.checkstyle>
+    <version.checkstyle>3.1.2</version.checkstyle>
     <!-- make sure bundle plugin has dependency informations for 'optional' -->
     <commons.osgi.excludeDependencies />
     <commons.osgi.import>
@@ -190,12 +190,12 @@
     <dependency.locations.enabled>false</dependency.locations.enabled>
     <hadoop.version>3.3.0</hadoop.version>
     <jackrabbit.version>1.6.5</jackrabbit.version>
-    <jackrabbit2.version>2.21.4</jackrabbit2.version>
+    <jackrabbit2.version>2.21.5</jackrabbit2.version>
     <commons.surefire.version>2.19.1</commons.surefire.version>
-    <commons.japicmp.version>0.15.1</commons.japicmp.version>
+    <commons.japicmp.version>0.15.2</commons.japicmp.version>
     <commons.jacoco.version>0.8.6</commons.jacoco.version>
     <commons.spotbugs.version>4.1.4</commons.spotbugs.version>
-    <commons.spotbugs.impl.version>4.2.0</commons.spotbugs.impl.version>    
+    <commons.spotbugs.impl.version>4.2.0</commons.spotbugs.impl.version>
     <log4j2.version>2.14.0</log4j2.version>
     <clirr.skip>true</clirr.skip>
     <japicmp.skip>false</japicmp.skip>
@@ -285,9 +285,9 @@
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>8.38</version>
+            <version>8.41</version>
           </dependency>
-        </dependencies>        
+        </dependencies>
         <!-- Keep build/reporting in sync -->
         <configuration>
           <!--<propertiesLocation>${vfs.parent.dir}/checkstyle.properties</propertiesLocation> -->
@@ -334,7 +334,7 @@
             </excludes>
           </parameter>
         </configuration>
-      </plugin>    
+      </plugin>
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
@@ -410,7 +410,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.13.0</version>
+        <version>3.14.0</version>
         <configuration>
           <targetJdk>${maven.compiler.target}</targetJdk>
           <aggregate>true</aggregate>
@@ -435,7 +435,7 @@
             </excludes>
           </parameter>
         </configuration>
-      </plugin>    
+      </plugin>
       <!-- cobertura breaks because it cannot parse annotations in methods. -->
       <!--
       <plugin>
@@ -495,7 +495,7 @@
       <dependency>
         <groupId>commons-net</groupId>
         <artifactId>commons-net</artifactId>
-        <version>3.7.2</version>
+        <version>3.8.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -574,12 +574,12 @@
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.13.1</version>
+        <version>4.13.2</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>3.7.0</version>
+        <version>3.8.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
